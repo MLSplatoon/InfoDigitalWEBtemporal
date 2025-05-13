@@ -20,30 +20,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-<script>
-  const container = document.querySelector('.respuestas');
-  const textDiv = document.getElementById('textToReveal');
-
-  function toggleReveal() {
-    if(textDiv.classList.contains('covered')) {
-      textDiv.classList.remove('covered');
-      textDiv.classList.add('revealed');
-      container.setAttribute('aria-pressed', 'true');
-    } else {
-      textDiv.classList.remove('revealed');
-      textDiv.classList.add('covered');
-      container.setAttribute('aria-pressed', 'false');
-    }
-  }
-
-  container.addEventListener('click', toggleReveal);
-  container.addEventListener('keypress', e => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      toggleReveal();
-    }
-  });
-</script>
 </head>
 
 <body>
@@ -185,11 +161,6 @@
                             <h5 class="text-uppercase font-weight-bold mb-3">H5 HEADER</h5>
                             <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/image02-noticia-aaaa.png">
                             <p>ZONA DE TEXTO N2</p>
-			<div class="hint">Haz click para revelar u ocultar la respuesta</div>
-    			<div id="textToReveal" class="reveal-text covered" aria-live="polite" aria-atomic="true" >
-      			El inglés
-    		        </div>
-                        </div>
                         <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                             <div class="d-flex align-items-center">
                                 <span>Jana, Lucía, Olga, Nicolás, Susana, Paula y Marco Antonio.</span>
