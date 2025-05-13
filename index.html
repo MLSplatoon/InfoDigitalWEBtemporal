@@ -267,22 +267,22 @@
 				<br>
     				<p id="answer" style="display: none;">El Inglés.</p>
 				<p>¿Qué hacía antes el gobierno con las personas que no hablaban inglés?</p>
-    				<button class="btn btn-primary" id="toggleAnswer">Mostrar Respuesta</button>
+    				<button class="btn btn-primary" id="toggleAnswer1">Mostrar Respuesta</button>
 				<br>
-    				<p id="answer" style="display: none;">Les ayudaba traduciendo los documentos a su idioma.</p>
+    				<p id="answer1" style="display: none;">Les ayudaba traduciendo los documentos a su idioma.</p>
 				<p>¿Porque Trump piensa que es buena esta orden?</p>
-    				<button class="btn btn-primary" id="toggleAnswer">Mostrar Respuesta</button>
+    				<button class="btn btn-primary" id="toggleAnswer2">Mostrar Respuesta</button>
 				<br>
-    				<p id="answer" style="display: none;">Porque dice que si todo el mundo habla el mismo idioma, van a poder entenderse mejor, también ayuda a los inmigrantes a aprender inglés más rapido y a poder conseguir mejores
+    				<p id="answer2" style="display: none;">Porque dice que si todo el mundo habla el mismo idioma, van a poder entenderse mejor, también ayuda a los inmigrantes a aprender inglés más rapido y a poder conseguir mejores
 trabajos sabiendo inglés.</p>
 				<p>¿Qué problemas puede causar en la gente que no habla inglés?</p>
-    				<button class="btn btn-primary" id="toggleAnswer">Mostrar Respuesta</button>
+    				<button class="btn btn-primary" id="toggleAnswer3">Mostrar Respuesta</button>
 				<br>
-    				<p id="answer" style="display: none;">Hace más difícil que las personas que no hablan inglés consigan ayuda o entiendan documentos importantes y también pueden hacer que se sientan excluidos.</p>
+    				<p id="answer3" style="display: none;">Hace más difícil que las personas que no hablan inglés consigan ayuda o entiendan documentos importantes y también pueden hacer que se sientan excluidos.</p>
 				<p>¿Cuántas personas hablan español en Estados Unidos y por qué es importante este dato?</p>
-    				<button class="btn btn-primary" id="toggleAnswer">Mostrar Respuesta</button>
+    				<button class="btn btn-primary" id="toggleAnswer4">Mostrar Respuesta</button>
 				<br>
-    				<p id="answer" style="display: none;">Más de 41 millones de personas, Es importante debido a que es el segundo idioma más hablado en todo EE.UU.</p>
+    				<p id="answer4" style="display: none;">Más de 41 millones de personas, Es importante debido a que es el segundo idioma más hablado en todo EE.UU.</p>
                             </div>
                             <small>Versión Prototipo</small>
                         </div>
@@ -407,6 +407,54 @@ trabajos sabiendo inglés.</p>
 <script>
     document.getElementById('toggleAnswer').addEventListener('click', function() {
         var answer = document.getElementById('answer');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            this.textContent = 'Ocultar Respuesta';
+        } else {
+            answer.style.display = 'none';
+            this.textContent = 'Mostrar Respuesta';
+        }
+    });
+</script>
+<script>
+    document.getElementById('toggleAnswer1').addEventListener('click', function() {
+        var answer = document.getElementById('answer1');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            this.textContent = 'Ocultar Respuesta';
+        } else {
+            answer.style.display = 'none';
+            this.textContent = 'Mostrar Respuesta';
+        }
+    });
+</script>
+<script>
+    document.getElementById('toggleAnswer2').addEventListener('click', function() {
+        var answer = document.getElementById('answer2');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            this.textContent = 'Ocultar Respuesta';
+        } else {
+            answer.style.display = 'none';
+            this.textContent = 'Mostrar Respuesta';
+        }
+    });
+</script>
+<script>
+    document.getElementById('toggleAnswer3').addEventListener('click', function() {
+        var answer = document.getElementById('answer3');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            this.textContent = 'Ocultar Respuesta';
+        } else {
+            answer.style.display = 'none';
+            this.textContent = 'Mostrar Respuesta';
+        }
+    });
+</script>
+<script>
+    document.getElementById('toggleAnswer4').addEventListener('click', function() {
+        var answer = document.getElementById('answer4');
         if (answer.style.display === 'none') {
             answer.style.display = 'block';
             this.textContent = 'Ocultar Respuesta';
