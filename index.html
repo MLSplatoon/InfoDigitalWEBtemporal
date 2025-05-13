@@ -157,7 +157,9 @@
 
 				En más de 30 estados de EE.UU ya se decía que era el idioma oficial, pero ahora es a nivel nacional, cuando Trump quitó la versión en Español de la web de la página de la 
 				Casa Blanca, muchos se molestaron, pero lo volvieron a poner después.</p>
-
+			    <p>¿Cuál es el segundo idioma más hablado en Estados Unidos?</p>
+    			    <button class="btn btn-primary" id="toggleAnswer">Mostrar Respuesta</button>
+    			    <p id="answer" style="display: none;">El español es el segundo idioma más hablado en Estados Unidos, con más de 41 millones de personas que lo usan.</p>
                             <h5 class="text-uppercase font-weight-bold mb-3">H5 HEADER</h5>
                             <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/image02-noticia-aaaa.png">
                             <p>ZONA DE TEXTO N2</p>
@@ -364,7 +366,20 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-
+    <!--Show/Hide Answer System VER 1.0 dhashksdjklfklfhjdshjkah-->
+    <script>
+    document.getElementById('toggleAnswer').addEventListener('click', function() {
+        var answer = document.getElementById('answer');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            this.textContent = 'Ocultar Respuesta';
+        } else {
+            answer.style.display = 'none';
+            this.textContent = 'Mostrar Respuesta';
+        }
+    });
+</script>
+	
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
